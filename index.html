@@ -1,1 +1,256 @@
-My link in bio
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+<style>
+  html {
+    min-height: 100%;
+    height: fit-content;
+  }
+
+  body {
+    min-height: 100%;
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .items {
+    margin: auto;
+    padding: 30px;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    font-family: 'Playfair Display', Serif;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .social-icon {
+    display: inline-block; 
+    border: 0px solid #75636e; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    width: 40px; 
+    height: 28px; 
+}
+
+.socialicons-img {
+    width: 100%; 
+    height: auto; 
+}
+
+  .banner-image {
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+    object-fit: cover;
+  }
+
+  .thumbnail {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    object-fit: cover;
+  }
+
+  .link {
+    padding: 5px;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-elevation-low);
+    transition: 0.3s;
+  }
+
+  .link:hover {
+    box-shadow: var(--shadow-elevation-medium);
+  }
+
+  .link-text {
+    flex: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+
+  .background--custom {
+    background-color: #FFFFFF;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    position: absolute;
+    overflow: hidden;
+    z-index: -3;
+    top: 0;
+    left: 0;
+  }
+
+  canvas#canvas {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    transform: rotate(0deg) scale(2) translateY(-50%);
+    --gradient-color-1: #171404;
+    --gradient-color-2: #726d6b;
+    --gradient-color-3: #05314f;
+    --gradient-color-4: #26034e;
+    --gradient-speed: 0.000006;
+  }
+
+  .glassy {
+    background-color: rgba(149, 123, 173, 0.75);
+  }
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .glassy {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(149, 123, 173, 0.5);
+    }
+
+    .warning {
+      display: none;
+    }
+  }
+
+  :root {
+    --shadow-color: 272deg 21% 35%;
+    --shadow-elevation-low:
+      0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.17),
+      0.4px 0.9px 1.3px -0.6px hsl(var(--shadow-color) / 0.29),
+      1px 2px 2.9px -1.2px hsl(var(--shadow-color) / 0.4);
+    --shadow-elevation-medium:
+      0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.18),
+      1px 2px 2.9px -0.4px hsl(var(--shadow-color) / 0.27),
+      2.3px 4.5px 6.6px -0.8px hsl(var(--shadow-color) / 0.36),
+      5px 10px 14.7px -1.2px hsl(var(--shadow-color) / 0.45);
+    --shadow-elevation-high:
+      0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.17),
+      2px 4.1px 6px -0.2px hsl(var(--shadow-color) / 0.21),
+      3.7px 7.3px 10.7px -0.4px hsl(var(--shadow-color) / 0.25),
+      5.6px 11.2px 16.4px -0.5px hsl(var(--shadow-color) / 0.29),
+      8.3px 16.6px 24.4px -0.7px hsl(var(--shadow-color) / 0.34),
+      12.1px 24.2px 35.5px -0.9px hsl(var(--shadow-color) / 0.38),
+      17.5px 35.1px 51.5px -1.1px hsl(var(--shadow-color) / 0.42),
+      25px 50px 73.4px -1.2px hsl(var(--shadow-color) / 0.46);
+  }
+
+</style>
+
+  </head>
+
+  <body>
+    <div class="background--custom">
+  
+      <div class="items">
+  
+        <div class="banner">
+          <img src="/thumbnails/profile.jpg" alt="Princewil Mbah headshot" class="banner-image">
+        </div>
+  
+        <div class="name">
+          Princewil Mbah
+        </div>
+  
+        <div class="social-icons">
+          <a href="https://github.com/cannypea" target="_blank" class="social-icon">
+            <img class="socialicons-img" src="/thumbnails/github.jpeg"
+          </a>
+
+  
+          <a href="https://github.com/cannypea" target="_blank" class="social-icon">
+            <img class="socialicons-img" src="/thumbnails/instagram.avif" 
+          
+          </a>
+  
+          <a href="https://github.com/cannypea" target="_blank" class="social-icon">
+            <img class="socialicons-img" src="/thumbnails/twitter.avif">
+          
+          </a>
+  
+          <a href="https://github.com/cannypea" target="_blank" class="social-icon">
+            <img class="socialicons-img" src="/thumbnails/facebook.avif">
+          
+          </a>
+
+          <a href="https://github.com/cannypea" target="_blank" class="social-icon">
+            <img class="socialicons-img" src="/thumbnails/linkedin.avif" alt="LinkedIn">
+        </a>
+        
+
+        </div>
+  
+        <div class="link glassy">
+          <img class="thumbnail"
+            src="https://media.istockphoto.com/id/1484022200/photo/chicago-skyline-aerial-drone-view-from-above-city-of-chicago-downtown-skyscrapers-cityscape.jpg?s=1024x1024&w=is&k=20&c=ep3tlT3vpJ9_4zuFyt4s8rmom14sx7kYIgBX5bHdGBY=">
+  
+          <a class="link-text" target="_blank" href="https://positivepsychology.com/happiness/">The Science of Happiness
+            — Nicole Celestine, Ph.D.</a>
+        </div>
+
+        <div class="link glassy">
+          <img class="thumbnail"
+            src="https://images.unsplash.com/photo-1610962895729-2975a9717fad?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  
+          <a class="link-text" target="_blank" href="https://www.tapmagonline.com/tap/leadership-lessons-from-dr-myles-munroe">Leadership 101 - Lessons from Dr. Myles Munroe
+            — Moses Mutabaruka</a>
+        </div>
+
+        <div class="link glassy">
+          <img class="thumbnail"
+            src="https://images.unsplash.com/photo-1626639339297-b98c4f2e236a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  
+          <a class="link-text" target="_blank" href="http://paulgraham.com/startupideas.html">How to Find Your Purpose
+            — Tony Robbins</a>
+        </div>
+
+        <div class="link glassy">
+          <img class="thumbnail"
+            src="https://images.unsplash.com/photo-1613358024823-357ede526cc3?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  
+          <a class="link-text" target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas
+            — Paul Graham</a>
+        </div>
+  
+        
+      </div>
+  
+      <canvas id="canvas" />
+    </div>
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+    <script>
+      var gradient = new Gradient();
+      gradient.initGradient("#canvas");
+    </script>
+  </body>
+</html>
